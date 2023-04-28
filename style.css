@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(226, 182, 100);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    box-sizing: border-box;
+    height: 150px;
+    padding: 50px 20px;
+    background-color: rgb(237, 61, 237);
+    margin-bottom: 20px;
+    
+}
+.display{
+    display: flex;
+    
+}
+.box_style{
+    background-color: rgb(36, 178, 234);
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px gray;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    color: white;
+}
+.left{
+    height: 50px;
+    width: 350px;
+}
+.middle{
+    margin-left: 30px;
+    width: 750px;
+}
+h1{
+    font-size: 30px;
+    padding-top: 20px ;
+}
+.middle p{
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.right{
+    text-align: center;
+    width: 450px;
+    height: 400px;
+}
+.right p{
+    width: 350px;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+.footer{
+    background-color: rgb(24, 163, 218);
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    margin-top: 20px;
+
+}
+
+/* ipad  */
+@media only screen and (min-width:500px) and (max-width:900px){
+    
+    .header{
+        height: 100px;
+        font-size: 30px;
+        width: 100%;
+        display: inline-block;
+        padding: 30px 20px;
+        
+    }
+    .display{
+        flex-direction: column;
+    }
+    .left{
+        width: 95%;
+        margin-left: 20px;
+    }
+    .middle{
+        width: 95%;
+        margin-left: 20px;
+    }
+    .right{
+        margin-left: 20px;
+        width: 95%;
+    }
+    .right p{
+        padding-left: 230px;
+    }
+    .footer{
+        margin-bottom: 250px;
+    }
+}
+
+/* mobile view  */
+@media only screen and (min-width:250px) and (max-width:500px){
+
+    .header{
+        height: 100px;
+        font-size: 30px;
+        width: 100%;
+        display: inline-block;
+        padding: 30px 20px;
+    }
+    .display{
+        flex-direction: column;
+    }
+    .left{
+        width:93%;
+        margin-left: 10px;
+    }
+    .middle{
+        width: 93%;
+        margin-left: 10px;
+    }
+    .middle p{
+        font-size: small;
+    }
+    .right{
+        margin-left: 10px;
+        width: 93%;
+        text-align: center;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    .right p{
+        font-size: small;
+        width: 95%;
+    }
+    .footer{
+        font-size: small;
+        
+    }
+}
